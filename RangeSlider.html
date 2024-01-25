@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Range Sliders</h1>
+    <input type="range" id="r">
+    <input id="t">
+    <div id="d"></div>
+    <span id="s"></span>
+    <h4 id="h"></h4>
+
+    <script>
+        r.oninput = c;
+        function c() {
+            t.value = this.value;
+            d.innerText = this.value;
+            s.innerText = this.value;
+            h.innerText = this.value;
+        }
+    </script>
+</body>
+
+</html>
